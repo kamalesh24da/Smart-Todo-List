@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Smart Todo List - Organize Your Work{% endblock %}
+
+{% block content %}
+<div class="landing-page">
+    <div class="landing-content">
+        <div class="landing-hero">
+            <span class="badge-tag">SMART TODO LIST</span>
+            <h1>Organize your work.<br>Complete your goals.</h1>
+            <p class="subtitle">A secure full-stack task manager with authentication, priorities, due dates, search and filters.</p>
+            <div class="hero-actions">
+                <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
+                <a href="{{ url_for('auth.register') }}" class="btn btn-outline">Create Account</a>
+            </div>
+        </div>
+
+        <div class="landing-feature-card">
+            <ul class="feature-checklist">
+                <li><span class="check-icon">✓</span> Manage personal tasks</li>
+                <li><span class="check-icon">★</span> Set priority & deadlines</li>
+                <li><span class="check-icon">⚲</span> Search and filter</li>
+                <li><span class="check-icon">🔒</span> Secure user accounts</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

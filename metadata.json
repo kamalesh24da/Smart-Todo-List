@@ -1,0 +1,6 @@
+{
+  "name": "Smart Todo List - Digital Task Management Platform",
+  "description": "Secure user-specific task management web application with authentication, priority tracking, filtering, and automated test suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

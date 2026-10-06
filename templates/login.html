@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Smart Todo List{% endblock %}
+
+{% block content %}
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <h2>Welcome Back</h2>
+        <p class="auth-subtitle">Login to manage your tasks.</p>
+
+        <form action="{{ url_for('auth.login') }}" method="POST" class="auth-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="kamalesh@example.com" required autofocus>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        <p class="auth-footer">
+            New user? <a href="{{ url_for('auth.register') }}">Create an account</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
